@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Courgette&family=Darker+Grotesque:wght@300&family=Diphylleia&family=Mukta+Malar:wght@200&family=Noto+Sans:wght@100&family=Poppins:wght@200&family=Public+Sans:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100vh;
+  background-color: #4070f4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  max-width: 430px;
+  width: 100%;
+  background: #ffff;
+  padding: 30px;
+  border-radius: 6px;
+}
+header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #232836;
+}
+form {
+  margin-top: 30px;
+}
+form.field {
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid #cacaca;
+  border-radius: 6px;
+}
+.field input:focus {
+  border-bottom-width: 2px;
+}
+.eye-icon {
+  position: absolute;
+  font-size: 18px;
+  color: #8b8b8b;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 5px;
+}
+.field button {
+  color: #ffff;
+  background-color: #0171d3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.field button:hover {
+  background-color: #016dcd;
+}
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+}
+.form-link span,
+.form-link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #232836;
+}
+.form a {
+  text-decoration: none;
+  color: #0171d3;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+.line {
+  height: 2px;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+  position: relative;
+}
+.line::before {
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffff;
+  color: #232836;
+  padding: 0 15px;
+}
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form .field {
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 6px;
+}
+a.facebook {
+  color: #ffff;
+  background-color: #4267b2;
+}
+a.facebook .facebook-icon {
+  height: 28px;
+  width: 28px;
+  color: #0171d3;
+  background-color: #ffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facebook-icon,
+img.google-img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+a .google-img {
+  height: 30px;
+  width: 20px;
+  object-fit: cover;
+}
+a.google {
+  border: 1px solid #cacaca;
+}
+a.google span {
+  color: #232836;
+  font-weight: 500;
+  opacity: 0.6;
+}
